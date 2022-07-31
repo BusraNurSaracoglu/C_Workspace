@@ -1,23 +1,24 @@
 #include <stdio.h>
 
-// Kullanýcýdan a,b,c deðerleri alarak delta hesaplamasý ve deltanýn 0'dan büyük mü yoksa küþçük mü olduðunu sorgulayan programý yazýnýz.
 
+int main(){
+	
+	
 
-int main(int argc, char **argv){
+	int i,j, rows ;
 	
-	int a,b,c;
-	int delta;
 	
-	printf("lutfen sirayla a,b,c degerlerini giriniz:");
-	scanf("%d %d %d",&a,&b,&c); 
+	printf("Satir sayisini giriniz:");
+	scanf("%d",&rows);
 	
-	delta = b*b - 4*a*c;
-	printf("delta  : %d \n",delta);
 	
-	printf("delta sifirdan buyukse 1 kucukse 0 yazdir : %d", (delta >= 0));
-	
+	for(i=1;i<(rows+1);++i){
+		for(j=1;j<=i;++j){
+			printf("* ");
+		}
+		printf("\n");
+	}
 	
 	
 	return 0;
-	
 }
